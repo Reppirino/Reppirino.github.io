@@ -1,0 +1,173 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  .hero__main-image {
+    width: 100%;
+    height: 100vh;
+    // max-height: 1080px;
+    max-width: 1920px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    .hero__headshot {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .hero__job-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 100;
+    position: absolute;
+    gap: 0.5rem;
+    bottom: 25%;
+    right: 20%;
+
+    h1 {
+      background: $secondary-color;
+      padding: 1rem 2rem;
+      font-size: 4rem;
+      font-weight: 400;
+      color: $main-color;
+    }
+  }
+
+  .swiper-cameras {
+    max-width: 370px;
+    max-height: 304px;
+    width: 370px;
+    height: 304px;
+    position: absolute;
+    top: 27%;
+    left: 22%;
+    z-index: 9;
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 90%;
+      height: 88%;
+      object-fit: cover;
+    }
+  }
+
+  .hero__scroll-down {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 90;
+
+    .scroll-down__text {
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      color: $secondary-color;
+    }
+
+    .scroll-down__bar {
+      width: 1px;
+      height: 68px;
+      background: $secondary-color;
+      margin-top: 1rem;
+    }
+  }
+
+  .hero__social-links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 4rem;
+    display: flex;
+    gap: 0.85rem;
+
+    .hero__social-link {
+      background: $secondary-color;
+      border-radius: $default-radius;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 105;
+    }
+  }
+
+  .hero__change-language {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    z-index: 105;
+
+    i {
+      font-size: 0.35rem;
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 767px) {
+  .hero__social-links {
+    display: none !important;
+  }
+
+  .hero__change-language {
+    left: 0;
+  }
+
+  .hero__job-description {
+    top: 15% !important;
+    left: 2rem !important;
+
+    h1 {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  .swiper-cameras {
+    display: none !important;
+  }
+
+  .hero__main-image {
+    height: 80vh !important;
+    top: 20% !important;
+  }
+}

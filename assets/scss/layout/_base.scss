@@ -1,0 +1,103 @@
+// RESET
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+  font-family: $main-font;
+}
+
+body {
+  margin: 0;
+  background-color: transparent;
+  color: $main-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: $main-color;
+  font-family: $secondary-font;
+  font-weight: 350;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: $main-color;
+  font-size: 1.25rem;
+  transition: $default-speed;
+
+  &:hover {
+    transform: $default-scale;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: $main-color;
+  font-size: 1.25rem;
+}
+
+i,
+span {
+  margin: 0;
+  padding: 0;
+  color: $main-color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+::selection {
+  background: $secondary-color;
+  color: $main-color;
+}
+
+// REUSABLE CLASSES
+.nav-active {
+  position: relative;
+
+  &::after {
+    content: "•";
+    position: absolute;
+    left: 46%;
+    top: 80%;
+    color: $secondary-color;
+  }
+}
+
+.link-active {
+  color: $secondary-color;
+}
+
+.language-active {
+  font-weight: 600;
+}

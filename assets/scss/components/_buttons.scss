@@ -1,0 +1,37 @@
+// MAIN BUTTON
+.main-btn {
+  background: $secondary-color;
+  padding: 1rem 2rem;
+  border-radius: $default-radius;
+}
+
+.ghost-btn {
+  padding: 1rem 2rem;
+  border: $default-border;
+  border-radius: $default-radius;
+  color: #fff !important;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $secondary-color;
+    border: 1px solid $secondary-color;
+    border-radius: $default-radius;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: $default-speed;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: scaleX(1);
+    color: $main-color !important;
+  }
+}
