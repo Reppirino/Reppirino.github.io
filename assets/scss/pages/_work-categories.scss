@@ -40,111 +40,6 @@ a {
     }
   }
 }
-// .work-photography {
-//   overflow: hidden;
-// }
-
-// .uk-slider-container {
-//   overflow: initial !important;
-// }
-
-// .slider-wrapper {
-//   a:hover {
-//     transform: none !important;
-//   }
-
-//   .slider-arrow__left-container {
-//     height: 100%;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   .slider-arrow__right-container {
-//     height: 100%;
-//     position: absolute;
-//     top: 0;
-//     right: -5%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-
-//   .slider-arrow__left-container a,
-//   .slider-arrow__right-container a {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     background: $secondary-color;
-//     border-radius: $default-radius;
-//     width: 54px;
-//     height: 54px;
-//     transition: $default-speed;
-//     &:hover {
-//       opacity: 0.8;
-//     }
-//   }
-
-//   .uk-slider-items {
-//     position: relative;
-//     display: flex !important;
-//     gap: 1rem !important;
-
-//     li {
-//       width: 50%;
-//       max-height: 560px;
-//       overflow: hidden !important;
-//       position: relative;
-//       border-radius: 0.3rem;
-
-//       a {
-//         &:hover {
-//           img {
-//             transform: scale(1.2);
-//           }
-//         }
-//       }
-
-//       img {
-//         transition: 0.8s;
-//       }
-
-//       .slider-description {
-//         position: absolute;
-//         bottom: 0;
-//         width: 100%;
-//         text-align: center;
-//         padding: 2rem 0;
-//         background: rgba($color: #2e2e2e, $alpha: 0.9);
-
-//         a {
-//           color: #ffe600 !important;
-//           transition: 0.4s;
-
-//           &:hover {
-//             text-decoration: none;
-
-//             i {
-//               margin-left: 1.5rem;
-//             }
-//           }
-//         }
-
-//         i {
-//           color: #ffe600 !important;
-//           font-size: 1.4rem;
-//           position: absolute;
-//           top: 33%;
-//           margin-left: 0.5rem;
-//           transition: 0.6s;
-//         }
-//       }
-//     }
-//   }
-// }
 
 // FILMMAKING
 .work-filmmaking {
@@ -163,6 +58,7 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
+      z-index: 99999999;
 
       &:hover {
         transform: none !important;

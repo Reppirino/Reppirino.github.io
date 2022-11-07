@@ -877,6 +877,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 99999999;
 }
 
 .work-filmmaking .video-showcase-wrapper .video-showcase-description:hover {
